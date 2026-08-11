@@ -15,7 +15,8 @@
 
 - `attempt_repository.go` — CRUD попыток, транзакции, оптимистичная блокировка
 - `attempt_mapper.go` — маппинг домена в JSONB и обратно
-- `progress_repository.go` — чтение сырых фактов для прогресса
+- `progress_repository.go` — чтение "сырых" фактов для прогресса. Сами структуры данных (`progress.Facts`, `CompletedAttempt`, `ActiveAttempt`) 
+и интерфейс `Repository` определены в другой части проекта и предоставлены другим бэкэнд-разработчиком.
 - `profile_repository.go` — управление анонимными профилями
 - `scenario_archive_repository.go` — синхронизация версий сценариев
 - `errors.go` — разбор ошибок PostgreSQL
